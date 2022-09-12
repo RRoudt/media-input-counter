@@ -1,19 +1,24 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <h1>TL media counter:</h1>
-            <h2 id="count-el">0'</h2>
-            <button id="increment-btn" onclick="increment()">+5 MINUTES</button>
-            <button id="decrement-btn" onclick="decrement()">-5 MINUTES</button>
-            <button id="save-btn" onclick="save()">SAVE</button>
-            <p id="total-el">Total input time: </p>
-            <p id="net-el">Net input time: </p>
-            <button id="reset-btn" onclick="reset()">RESET</button>
-            <script src="index.js">
-            </script>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Target Language Input Counter (TLIC)</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Target Language Input Counter</h1>
+        <h2 id="count-el">0'</h2>
+        <button id="increment-btn" onclick="increment()">+5 MINUTES</button>
+        <button id="decrement-btn" onclick="decrement()">-5 MINUTES</button>
+        <button id="save-btn" onclick="save()">SAVE</button>
+        <p id="total-el">Total input time: </p>
+        <p id="net-el">Net input time: </p>
+        <button id="reset-btn" onclick="reset()">RESET</button>
+        <script src="index.js"></script>
+    </div>
+</body>
 </html>
