@@ -1,4 +1,4 @@
-// Set 
+// Set variables to target specific HTML elements on the page
 let totalEl = document.getElementById("total-el");
 let netEl = document.getElementById("net-el");
 let countEl = document.getElementById("count-el");
