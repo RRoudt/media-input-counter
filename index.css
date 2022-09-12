@@ -37,7 +37,8 @@ button:hover {
 }
 
 .container {
-    max-width: 80%;
+    max-width: 50%;
+    min-width: 300px;
     margin: auto;
     background-color: #fff;
     padding: 10px;
@@ -127,14 +128,6 @@ button:hover {
 
 @media only screen and (max-width: 768px) {
     body {
-      font-size: 1em;
-    }
-    
-    button {
-        max-width: 150px;
-    }
-    
-    .times {
-        max-width: 150px;
+      font-size: 1.5em;
     }
 }
