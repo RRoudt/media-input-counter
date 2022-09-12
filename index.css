@@ -28,6 +28,10 @@ button {
     border-radius: 5px;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 .wrapper {
     max-width: 80%;
     margin: auto;
@@ -41,20 +45,60 @@ button {
     background: darkgreen;
 }
 
+#increment-btn:hover {
+    background: green;
+}
+
+#increment-btn:active {
+    color: #333;
+    background: limegreen;
+}
+
 #decrement-btn {
     background: darkred;
 }
 
+#decrement-btn:hover {
+    background: brown;
+}
+
+#decrement-btn:active {
+    color: #333;
+    background: crimson;
+}
+
 #save-btn {
+    color: #333;
     background: darkgrey;
 }
 
-#reset-btn {
+#save-btn:hover {
+    color: white;
+    background: grey;
+}
+
+#save-btn:active {
+    color: #333;
     background: lightgrey;
+}
+
+#reset-btn {
+    background: darkgrey;
     color: #000;
     width: 100px;
     font-size: .5em;
 }
+
+#reset-btn:hover {
+    color: white;
+    background: darkred;
+}
+
+#reset-btn:active {
+    color: #333;
+    background: red;
+}
+
 
 @media only screen and (max-width: 768px) {
     body {
