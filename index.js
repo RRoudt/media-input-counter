@@ -18,6 +18,20 @@ function decrement() {
 function save() {
     totalTime += count;
     netTime = Math.floor(totalTime * 0.67);
+    if (totalTime >= 0) {
+        totalEl.textContent = `Total input time: ${totalTime}'`;
+        netEl.textContent = `Net input time: ${netTime}'`;
+        count = 0;
+        countEl.textContent = `${count}'`;
+    } else {
+        count = 0;
+        countEl.textContent = `${count}'`;
+    }
+}
+
+function save() {
+    totalTime += count;
+    netTime = Math.floor(totalTime * 0.67);
     totalEl.textContent = `Total input time: ${totalTime}'`;
     netEl.textContent = `Net input time: ${netTime}'`;
     count = 0;
