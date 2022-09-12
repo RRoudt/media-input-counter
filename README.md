@@ -1,4 +1,4 @@
-# Media input counter
+# Target Language Input Counter (TLIC)
 
 ## About this project
 
