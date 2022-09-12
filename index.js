@@ -32,7 +32,7 @@ function decrement() {
 // Save counter to total time, if the counter is above 0. Also updates the relevant HTML elements
 function save() {
     
-    //  before saving, to avoid getting a negative total input time
+    // Check if counter is above 0 before saving, to avoid counting an empty save
     if (count > 0) {
         timesSaved += 1;
         totalTime += count;
@@ -42,11 +42,6 @@ function save() {
         timesSavedEl.textContent = `Times saved: ${timesSaved}`; // Update HTML element with times-saved-el ID
         count = 0; // Reset counter to 0
         countEl.textContent = `${count}'`; // Update HTML element with count-el ID
-    } 
-    // Reset counter if it's negative, but don't save it
-    else {
-        count = 0; // Reset counter to 0
-        countEl.textContent = `${count}'`; // Updates HTML element with count-el ID
     }
 }
 
