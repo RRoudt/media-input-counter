@@ -22,14 +22,17 @@ function increment() {
 
 // Decrement counter by 5 minutes and update HTML element
 function decrement() {
-    count -= 5; // Decrease counter by 5
-    countEl.textContent = `${count}'`; // Update HTML element with count-el ID
+    // Check if counter is above 0
+    if (count > 0) {
+        count -= 5; // Decrease counter by 5
+        countEl.textContent = `${count}'`; // Update HTML element with count-el ID
+    }
 }
 
 // Save counter to total time, if the counter is above 0. Also updates the relevant HTML elements
 function save() {
     
-    // Check if counter is above 0 before saving, to avoid getting a negative total input time
+    //  before saving, to avoid getting a negative total input time
     if (count > 0) {
         timesSaved += 1;
         totalTime += count;
