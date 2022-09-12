@@ -9,7 +9,7 @@ function increment() {
     countEl.textContent = `${count}'`
 }
 
-// Save the current count, add it to the total time, display the total timem and reset the counter.
+// Save the current count, add it to the total time, display the total timem and reset the counter
 function save() {
     totalTime += count;
     saveEl.textContent = `Total input time: ${totalTime}'`
@@ -17,7 +17,7 @@ function save() {
     countEl.textContent = `${count}'`
 }
 
-// Reset both the counter and total time.
+// Reset both the counter and total time
 function reset() {
     count = 0
     totalTime = 0
