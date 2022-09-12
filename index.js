@@ -11,6 +11,9 @@ let netTime = 0; // Counts how much net time was saved
 let netTimeRatio = 0.67; // Sets ratio between total time and net time
 let count = 0; // The live counter which is used to save the total time
 
+// Put netTimeRatio in HTML
+netEl.innerHTML = `Net input time <sup>(x${netTimeRatio})</sup>: `;
+
 // Increment counter by 5 minutes and update HTML element
 function increment() {
     count += 5; // Increase counter by 5
@@ -32,7 +35,7 @@ function save() {
         totalTime += count;
         netTime = Math.floor(totalTime * netTimeRatio); // Round down the net time to a whole number
         totalEl.textContent = `Total input time: ${totalTime}'`; // Update HTML element with total-el ID
-        netEl.textContent = `Net input time: ${netTime}'`; // Update HTML element with net-el ID
+        netEl.innerHTML = `Net input time <sup>(x${netTimeRatio})</sup>: ${netTime}'`; // Update HTML element with net-el ID
         timesSavedEl.textContent = `Times saved: ${timesSaved}`; // Update HTML element with times-saved-el ID
         count = 0; // Reset counter to 0
         countEl.textContent = `${count}'`; // Update HTML element with count-el ID
@@ -51,7 +54,7 @@ function reset() {
     netTime = 0; // Reset net time to 0
     timesSaved = 0; // Reset times saved to 0
     countEl.textContent = `${count}'`; // Update element with count-el ID
-    totalEl.textContent = "Total input time: "; // Update HTML element with total-el ID
-    netEl.textContent = "Net input time: "; // Update HTML element with net-el ID
+    totalEl.textContent = `Total input time: `; // Update HTML element with total-el ID
+    netEl.innerHTML = `Net input time <sup>(x${netTimeRatio})</sup>: `; // Update HTML element with net-el ID
     timesSavedEl.textContent = `Times saved: `; // Update HTML element with times-saved-el ID
 }
