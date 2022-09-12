@@ -22,6 +22,7 @@ function save() {
 function reset() {
     count = 0;
     totalTime = 0;
+    countEl.textContent = `${count}'`;
     totalEl.textContent = "Total input time: ";
     netEl.textContent = "Net input time: ";
 }
