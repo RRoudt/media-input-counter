@@ -10,6 +10,11 @@ function increment() {
     countEl.textContent = `${count}'`;
 }
 
+function decrement() {
+    count -= 5;
+    countEl.textContent = `${count}'`;
+}
+
 function save() {
     totalTime += count;
     netTime = Math.floor(totalTime * 0.67);
